@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Educativo - Biblioteca Prof. Archimedes Belia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Tela Inicial -->
+        <div id="start-screen" class="screen">
+            <h1>Quiz da Biblioteca</h1>
+            <h2>Professor Archimedes Belia</h2>
+            <p>Trabalho de Artes - 1º Ano A</p>
+            <button id="start-btn" class="btn">Iniciar Jogo</button>
+        </div>
+
+        <!-- Tela de Perguntas -->
+        <div id="quiz-screen" class="screen hide">
+            <div class="header">
+                <span id="progress">Pergunta 1 de 5</span>
+                <span id="score">Pontos: 0</span>
+            </div>
+
+            <div id="question-container">
+                <h3 id="question-text">Texto da pergunta aqui...</h3>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Botões de resposta gerados via JS -->
+                </div>
+            </div>
+
+            <div id="feedback-container" class="hide">
+                <p id="feedback-text"></p>
+                <button id="next-btn" class="btn">Próxima Pergunta</button>
+            </div>
+        </div>
+
+        <!-- Tela Final -->
+        <div id="end-screen" class="screen hide">
+            <h2>Parabéns!</h2>
+            <p id="final-score">Você acertou X de Y perguntas!</p>
+            <button id="restart-btn" class="btn">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
